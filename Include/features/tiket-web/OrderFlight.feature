@@ -1,32 +1,39 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Product Hotel - Perform transaction with non-instant payment for xx guest and xx room and
+login using Facebook
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+# Background Assume already called LoginEmail.feature
+ 
+  Scenario Outline: Generate order for product flight
+    Given User navigate to product pesawat
+    When User select pesawat product
+    Then Highlight the modal dialog pesawat
+    When User check thickbox Pulang-Pergi
+    Then The selected radio button checked
+    When User fill dari <dari>
+    And Select the top list result dari
+    And User fill ke <ke>
+    And Select the top list result ke
+    And User select date berangkat
+    And User select date pulang
+    And Select Selesai
+    And Select Cari Penerbangan
+    Then Navigated to result search
+    When User select the custom filter for transit pergi <transit1>
+    Then The transit filter selected 
+    When User select pilih top of search penerbangan pergi
+    And  User select the custom filter for transit pulang <transit2>
+    And User select pilih top of search penerbangan pulang
+    Then Navigate to detail pemesanan flight
+    And Check sama dengan pemesan
+    And User select kewarganegaraan
+    And Select lanjutkan ke pembayaran flight
+    And Select Ya, Lanjutkan
+    Then Navigated to payment page
+    When User selecet BCA Virtual Account flight
+    Then Navigated to detail BCA Virtual Account flight
+    And User get nomor virtual account flight
+    And Procced to logout
+     
+    
+    Then 
+    

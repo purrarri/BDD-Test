@@ -89,7 +89,7 @@ class Auth {
 		WebUI.openBrowser(env.URL_fb + 'login')
 		WebUI.maximizeWindow()
 	}
-	
+
 	@When("User Masuk dengan facebook")
 	def tapFacebook(){
 		WebUI.click(findTestObject('Object Repository/Login/Page_Log in/button_Facebook'))

@@ -56,7 +56,7 @@ class Auth {
 	@When("User insert credential such as (.*)")
 	def fillEmail(String email){
 		WebUI.setText(findTestObject('Object Repository/Login/Page_Log in/username_field'), email)
-	}	
+	}
 	@And("User Select Lanjutkan button")
 	def tapLanjutkan(){
 		WebUI.click(findTestObject('Object Repository/Login/Page_Log in/button_Lanjutkan'))
@@ -78,5 +78,35 @@ class Auth {
 	@Then("Navigated to dashboard user")
 	def navigateToDashboard(){
 		WebUI.navigateToUrl(env.URL)
+	}
+	@Then("Navigated to login user")
+	def renavigateToLogin(){
+		WebUI.navigateToUrl(env.URL + 'login')
+		WebUI.maximizeWindow()
+	}
+	@Given("User navigate to facebook")
+	def loadFB() {
+		WebUI.openBrowser(env.URL_fb + 'login')
+		WebUI.maximizeWindow()
+	}
+	
+	@When("User Masuk dengan facebook")
+	def tapFacebook(){
+		WebUI.click(findTestObject('Object Repository/Login/Page_Log in/button_Facebook'))
+		WebUI.delay(7)
+	}
+	@Then("Return modal dialog indicate using Facebook account")
+	def navigateFacebook(){
+		// navigate to modal dialog facebook to procced login
+	}
+	@When("User insert credential as (.*) and (.*)")
+	def fillFacebook(String email, String password) {
+		WebUI.setText(findTestObject('Object Repository/Login/Page_Masuk Facebook/input_Login ke Facebook_email'), email)
+		WebUI.setText(findTestObject('Object Repository/Login/Page_Masuk Facebook/input_Login ke Facebook_pass'), password)
+	}
+	@And("User select login button facebook")
+	def tapLoginFacebook(){
+		WebUI.click(findTestObject('Object Repository/Login/Page_Masuk Facebook/button_Login'))
+		WebUI.delay(7)
 	}
 }

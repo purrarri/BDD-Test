@@ -1,32 +1,17 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Perform Login using facebook
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+# Background Assume the test using positive test case using valid exist credential
+ 
+  Scenario Outline: Perform login using facebook
+    Given User navigate to facebook
+    When User insert credential as <Email> and <Password>
+    And User select login button facebook
+    Then Navigated to login user
+    When User Masuk dengan facebook
+    Then Return modal dialog indicate using Facebook account
+    
+
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      | Email                       | Password					|
+      | andreassanggam@yahoo.com 		| D3adpoetsociety		|

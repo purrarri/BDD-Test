@@ -19,4 +19,9 @@
       <initValue>'C:/Users/andre/Katalon Studio/BDDRitase/Datasets/'</initValue>
       <name>PATH</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.facebook.com/'</initValue>
+      <name>URL_fb</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

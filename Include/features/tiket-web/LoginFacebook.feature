@@ -10,8 +10,8 @@ Feature: Perform Login using facebook
     When User Masuk dengan facebook
     Then Return modal dialog indicate using Facebook account
     
-
-
+#
+#Update these examples using valid credential for facebook
     Examples: 
       | Email                       | Password					|
       | andreassanggam@yahoo.com 		| D3adpoetsociety		|

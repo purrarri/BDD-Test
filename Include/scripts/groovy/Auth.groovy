@@ -109,4 +109,9 @@ class Auth {
 		WebUI.click(findTestObject('Object Repository/Login/Page_Masuk Facebook/button_Login'))
 		WebUI.delay(7)
 	}
+	@And("Procced to logout")
+	def navigateOut(){
+		WebUI.navigateToUrl(env.URL + 'logout')
+		WebUI.maximizeWindow()
+	}
 }

@@ -47,18 +47,36 @@ class Auth {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+	@Given("User navigate to web application")
+	def loadApp() {
+		WebUI.openBrowser(env.URL + 'login')
+		WebUI.maximizeWindow()
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	@When("User insert credential such as (.*)")
+	def fillEmail(String email){
+		WebUI.setText(findTestObject('Object Repository/Login/Page_Log in/username_field'), email)
+	}	
+	@And("User Select Lanjutkan button")
+	def tapLanjutkan(){
+		WebUI.click(findTestObject('Object Repository/Login/Page_Log in/button_Lanjutkan'))
+		WebUI.delay(7)
 	}
-
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	@Then("User navigated to sub login-register page")
+	def navigateSubLogin(){
+		//WebUI.navigateToUrl(env.URL + 'login')
+	}
+	@When("User insert credential pass as (.*)")
+	def fillPass(String password){
+		WebUI.setText(findTestObject('Object Repository/Login/Page_Log in/password_field'), password)
+	}
+	@And("User Select LOG IN button")
+	def tapLogin(){
+		WebUI.click(findTestObject('Object Repository/Login/Page_Log in/button_Log in'))
+		WebUI.delay(7)
+	}
+	@Then("Navigated to dashboard user")
+	def navigateToDashboard(){
+		WebUI.navigateToUrl(env.URL)
 	}
 }

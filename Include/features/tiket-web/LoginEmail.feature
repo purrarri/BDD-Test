@@ -3,7 +3,7 @@ Feature: Perform Login using email
 # Background Assume the test using positive test case using valid exist credential
  
   Scenario Outline: Perform login using an valid email
-    Given User navigate to web application
+    Given User navigate to login web application
     When User insert credential such as <Email> 
     And User Select Lanjutkan button
     Then User navigated to sub login-register page

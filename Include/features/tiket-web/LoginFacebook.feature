@@ -13,5 +13,5 @@ Feature: Perform Login using facebook
 #
 #Update these examples using valid credential for facebook
     Examples: 
-      | Email                       | Password					|
-      | andreassanggam@yahoo.com 		| D3adpoetsociety		|
+     | Email                      | Password					|
+     | valid-email-here 					| valid-password		|

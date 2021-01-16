@@ -47,18 +47,24 @@ class Flight {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+	@Given("Navigate to product flight")
+	def navigateFlight() {
+//		WebUI.navigateToUrl(env.URL + 'pesawat')
+		//		WebUI.maximizeWindow()
 	}
-
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
-	}
-
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
-	}
+	
+	@When("User select transit time (.*)")
+	def countTransit(String transit){
+		int a = transit.toInteger
+		if (a<1) {
+			println(a)
+		   WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_Langsung'))
+		} else
+		if (a>2) {
+		   WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_2 Transit'))
+		} else {
+		WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_1 Transit'))
+		}
+	  }
+	
 }

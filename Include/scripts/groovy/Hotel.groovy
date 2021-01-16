@@ -49,8 +49,8 @@ class Hotel {
 	 */
 	@Given("User navigate to product hotel")
 	def loadHotel() {
-//		WebUI.navigateToUrl(env.URL + 'hotel')
-//		WebUI.maximizeWindow()
+		//		WebUI.navigateToUrl(env.URL + 'hotel')
+		//		WebUI.maximizeWindow()
 	}
 
 	@When("User select tamu (.*)")
@@ -58,8 +58,6 @@ class Hotel {
 		for (int i = 1; i < tamu.toInteger(); i++) {
 			WebUI.click(findTestObject('Object Repository/Hotel/Hotel/custom_xx/tamu'))
 		}
-		
-		
 	}
 	@And("User select kamar (.*)")
 	def countKamar(String kamar){
@@ -67,5 +65,4 @@ class Hotel {
 			WebUI.click(findTestObject('Object Repository/Hotel/Hotel/custom_xx/kamar'))
 		}
 	}
-
 }

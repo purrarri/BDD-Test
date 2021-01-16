@@ -51,6 +51,12 @@ class Auth {
 	def loadApp() {
 		WebUI.openBrowser(env.URL + 'login')
 	}
+	
+	@Given("User navigate to login web application")
+	def loadEApp() {
+		WebUI.openBrowser(env.URL + 'login')
+		WebUI.maximizeWindow()
+	}
 
 	@When("User insert credential such as (.*)")
 	def fillEmail(String email){
@@ -112,6 +118,6 @@ class Auth {
 	@And("User call logout endpoint")
 	def navigateOut(){
 		WebUI.navigateToUrl(env.URL + 'logout')
-		WebUI.maximizeWindow()
+		WebUI.closeBrowser()
 	}
 }

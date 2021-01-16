@@ -51,15 +51,19 @@ WebUI.click(findTestObject('Object Repository/Hotel/Hotel/Page_Form Pemesanan - 
 
 WebUI.click(findTestObject('Object Repository/Hotel/Hotel/Page_Metode Pembayaran/i_BCA Virtual Account_tix tixicon tixicon-right'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Object Repository/Hotel/Hotel/custom_xx/Page_BCA Virtual Account/button_Lanjutkan'))
 
 va = WebUI.getText(findTestObject('Object Repository/Hotel/Hotel/custom_xx/Page_BCA Virtual Account/div_Nomor Virtual Account 3947 1001 1077 8008SALIN'))
-System.out.println(va+"***")
+
+System.out.println(va + '***')
 
 WebUI.click(findTestObject('Object Repository/Hotel/Hotel/custom_xx/Page_BCA Virtual Account/span_SALIN'))
 
 price = WebUI.getText(findTestObject('Object Repository/Hotel/Hotel/custom_xx/Page_BCA Virtual Account/div_IDR 5606192'))
-System.out.println(price+"***")
+
+System.out.println(price + '***')
 
 CucumberKW.runFeatureFile('Include/features/tiket-web/Logout.feature')
 

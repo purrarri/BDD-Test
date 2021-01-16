@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Silahkan Transfer keVirtual AccountBCAN_cf811d</name>
+   <tag></tag>
+   <elementGuidId>e267f912-7a1d-45f0-9448-e49f8c10b937</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/div[3]/div/div[2]/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>row</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Silahkan Transfer keVirtual AccountBCANomor Virtual Account 3947 1001 1078 0015SALINTotal PembayaranIDR 701.500Cara PembayaranTransfer Melalui ATMInput kartu ATM dan PIN AndaPilih Menu Transaksi LainnyaPilih TransferPilih Ke Rekening BCA Virtual AccountInput Nomor Virtual Account, yaitu  3947 1001 1078 0015Pilih BenarPilih YaAmbil bukti bayar AndaSelesaiTransfer Melalui Internet BankingLogin Internet BankingPilih Transfer DanaPilih Transfer ke BCA Virtual AccountInput Nomor Virtual Account, yaitu  3947 1001 1078 0015 sebagai No. Virtual AccountKlik LanjutkanInput Respon KeyBCA Appli 1Klik KirimBukti bayar ditampilkanSelesaiTransfer Melalui Mobile BankingLogin Mobile BankingPilih m-TransferPilih BCA Virtual AccountInput Nomor Virtual Account, yaitu  3947 1001 1078 0015 sebagai No. Virtual AccountKlik SendInformasi Virtual Account akan ditampilkanKlik OKInput PIN Mobile BankingBukti bayar ditampilkanSelesaiGanti Metode PembayaranLihat Daftar PesananBatamJakartaOrder ID: 110780015PergiPulangBTHCGK1j 45m08:25Feb 22Hang Nadim (BTH)Terminal 1 Domestik1j 45mJT 373  • Ekonomi10:10Feb 22Soekarno Hatta (CGK)Terminal 2D DomestikPenumpang1.Tuan Zulfikhar BTHCGKBagasi0 kgPerlindungan Ekstra1 itemDetail HargaTotal PembayaranIDR 701.500Dapatkan  1.041tiket PointsPergi  PulangBatam ⇄ JakartaTarifDewasa (x1)IDR 694.000Biaya Lainnyatiket FREE Protection (x1)IDR 0PajakTermasukBiaya JasaIDR 7.500Total PembayaranIDR 701.500Dapatkan  1.041tiket Points</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;content layout&quot;]/div[@class=&quot;main-wrap&quot;]/div[@class=&quot;payment-confirm&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/div[3]/div/div[2]/div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCA Virtual Account'])[2]/following::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]</value>
+   </webElementXpaths>
+</WebElementEntity>

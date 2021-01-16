@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Flight</name>
+   <name>FlightTransaction</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1a3e07bc-1adc-442e-ba42-807d48d1f22b</testCaseGuid>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_PILIH</name>
+   <name>span_Sama dengan pemesan_switch</name>
    <tag></tag>
-   <elementGuidId>8f9fee02-3818-4548-a8df-bd0a761f99e4</elementGuidId>
+   <elementGuidId>5cf028ec-72d3-46fe-939a-04c33d5a3459</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//div[@id='app']/div/div[3]/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div/div/label/span[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.v3-btn.v3-btn__yellow.list-horizontal__middle</value>
+         <value>span.switch</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,76 +21,62 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>v3-btn v3-btn__yellow list-horizontal__middle</value>
+      <value>switch</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>PILIH</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;left-side&quot;]/div[2]/div[@class=&quot;flight&quot;]/div[@class=&quot;wrapper-new-search-result&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;col-result list-horizontal__top&quot;]/div[@class=&quot;wrapper-result&quot;]/div[@class=&quot;section-box&quot;]/div[@class=&quot;section-box-content&quot;]/div[1]/div[@class=&quot;wrapper-flight-list&quot;]/div[@class=&quot;row relative&quot;]/div[@class=&quot;btn-book-now&quot;]/div[@class=&quot;v3-btn v3-btn__yellow list-horizontal__middle&quot;]</value>
+      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;left-side&quot;]/div[3]/div[@class=&quot;booking&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;container content&quot;]/div[@class=&quot;pull-left main&quot;]/div[@class=&quot;form&quot;]/div[@class=&quot;wrapper-passenger-details&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;person-with-passport-panel&quot;]/div[@class=&quot;heading-passenger-details&quot;]/label[@class=&quot;pull-right tix-core-toggleswitch label-left off&quot;]/span[@class=&quot;switch&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div/div/div/div/div/div/div</value>
+      <value>//div[@id='app']/div/div[3]/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div/div/label/span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Durasi tercepat'])[1]/following::div[8]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sama dengan pemesan'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kedatangan paling akhir'])[1]/following::div[8]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Penumpang 1: Dewasa'])[1]/following::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detail Penerbangan'])[1]/preceding::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Titel'])[2]/preceding::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detail Harga'])[1]/preceding::div[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='PILIH']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Lengkap'])[2]/preceding::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div[3]/div/div/div/div/div/div/div</value>
+      <value>//label/span[2]</value>
    </webElementXpaths>
 </WebElementEntity>

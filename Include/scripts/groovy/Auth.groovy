@@ -51,7 +51,7 @@ class Auth {
 	def loadApp() {
 		WebUI.openBrowser(env.URL + 'login')
 	}
-	
+
 	@Given("User navigate to login web application")
 	def loadEApp() {
 		WebUI.openBrowser(env.URL + 'login')

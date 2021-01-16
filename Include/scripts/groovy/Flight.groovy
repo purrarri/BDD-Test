@@ -49,22 +49,21 @@ class Flight {
 	 */
 	@Given("Navigate to product flight")
 	def navigateFlight() {
-//		WebUI.navigateToUrl(env.URL + 'pesawat')
+		//		WebUI.navigateToUrl(env.URL + 'pesawat')
 		//		WebUI.maximizeWindow()
 	}
-	
+
 	@When("User select transit time (.*)")
 	def countTransit(String transit){
 		int a = transit.toInteger
 		if (a<1) {
 			println(a)
-		   WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_Langsung'))
+			WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_Langsung'))
 		} else
 		if (a>2) {
-		   WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_2 Transit'))
+			WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_2 Transit'))
 		} else {
-		WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_1 Transit'))
+			WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/label_1 Transit'))
 		}
-	  }
-	
+	}
 }

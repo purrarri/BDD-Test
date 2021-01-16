@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Sama dengan pemesan_thumb</name>
+   <name>i_Whatsapp_tix tix-cancel</name>
    <tag></tag>
-   <elementGuidId>0bffbec4-a118-49e1-bf02-0cbb7956f026</elementGuidId>
+   <elementGuidId>953d5127-76f6-425d-9b70-e7c7978f0e09</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app']/div/div[3]/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div/div/label/span[2]/span</value>
+         <value>//div[@id='app']/div/div/div/div/div/i</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>span.thumb</value>
+         <value>i.tix.tix-cancel</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,34 +21,34 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>i</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>thumb</value>
+      <value>tix tix-cancel</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;left-side&quot;]/div[3]/div[@class=&quot;booking&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;container content&quot;]/div[@class=&quot;pull-left main&quot;]/div[@class=&quot;form&quot;]/div[@class=&quot;wrapper-passenger-details&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;person-with-passport-panel&quot;]/div[@class=&quot;heading-passenger-details&quot;]/label[@class=&quot;pull-right tix-core-toggleswitch label-left on&quot;]/span[@class=&quot;switch&quot;]/span[@class=&quot;thumb&quot;]</value>
+      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;with-popup no-full-popup fadeOverlay-enter-done&quot;]/div[@class=&quot;popup-container&quot;]/div[@class=&quot;with-popup-content&quot;]/div[@class=&quot;content-notification&quot;]/i[@class=&quot;tix tix-cancel&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/div[3]/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div/div/label/span[2]/span</value>
+      <value>//div[@id='app']/div/div/div/div/div/i</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//span[2]/span</value>
+      <value>//i</value>
    </webElementXpaths>
 </WebElementEntity>

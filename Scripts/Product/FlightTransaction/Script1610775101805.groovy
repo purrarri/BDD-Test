@@ -51,3 +51,45 @@ CucumberKW.runFeatureFile('Include/features/tiket-web/OrderFlight.feature')
 
 WebUI.delay(5)
 
+CucumberKW.runFeatureFile('Include/features/tiket-web/OrderFlight.feature')
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/div_PILIH'))
+
+WebUI.acceptAlert()
+
+CucumberKW.runFeatureFile('Include/features/tiket-web/OrderFlight.feature')
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/div_PILIH'))
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/span_Sama dengan pemesan_switch'))
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/span_Sama dengan pemesan_thumb'))
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/span_Sama dengan pemesan_switch'))
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/i_Kewarganegaraan_tix tix-chevron-down'))
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/li_Indonesia'))
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/button_LANJUTKAN KE PEMBAYARAN'))
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Harga Tiket Pesawat Murah - Cari  Pesa_be6459/button_YA LANJUTKAN'))
+
+WebUI.navigateToUrl('https://payment.tiket.com/?order_id=110781341&order_hash=2e5027e8090473947753bf033361e66018dba2f8')
+
+WebUI.click(findTestObject('Object Repository/Flight/Page_Metode Pembayaran/span_BCA Virtual Account'))
+
+WebUI.click(findTestObject('Page_BCA Virtual Account/button_Lanjutkan'))
+
+va_flight = WebUI.getText(findTestObject('Object Repository/Flight/Page_BCA Virtual Account/div_Nomor Virtual Account 3947 1001 1078 1341SALIN'))
+
+System.out.println(va_flight + '***')
+
+price_flight = WebUI.getText(findTestObject('Object Repository/Flight/Page_BCA Virtual Account/div_Total PembayaranIDR 875700'))
+
+System.out.println(price_flight + '***')
+
+WebUI.click(findTestObject('Page_BCA Virtual Account/span_SALIN'))
+
+CucumberKW.runFeatureFile('Include/features/tiket-web/Logout.feature')
+

@@ -9,9 +9,6 @@ login using Facebook
     And User select kamar <kamar>
     
 
-     
-    
-#
 #Custom and modify for value "tamu" xx and "kamar" 
     Examples: 
       | tamu  | kamar		|

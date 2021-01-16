@@ -5,30 +5,14 @@ login using Facebook
  
   Scenario Outline: Generate order for product hotel
     Given User navigate to product hotel
-    When User select Hotel product
-    Then Highlight the modal dialog hotel
-    When User fill the tujuan field by <tujuan>
-    And User select top recomendation list
-    Then Return modal calender
-    When User select check-in date
-    And User select check-out date
-    And User select tamu <tamu>
+    When User select tamu <tamu>
     And User select kamar <kamar>
-    And User select selesai
-    And User select CARI HOTEL
-    Then Navigate to search result
-    When User select top result
-    Then Navigated to detail result
-    When User select PILIH
-    Then User navigated to form pemesanan
-    When User select Lanjut ke pembayaran
-    Then Navigated to final BCA Virtual Account
-    And Get the nomor virtual account value
-    And Procced to logout
+    
+
      
     
 #
-#Update these examples using valid credential for facebook
+#Custom and modify for value "tamu" xx and "kamar" 
     Examples: 
-      |	tujuan		| tamu  | kamar		|
-      |	Batam			| 2			| 2				|
+      | tamu  | kamar		|
+      | 2			| 2				|

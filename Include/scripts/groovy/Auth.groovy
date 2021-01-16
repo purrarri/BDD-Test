@@ -50,7 +50,6 @@ class Auth {
 	@Given("User navigate to web application")
 	def loadApp() {
 		WebUI.openBrowser(env.URL + 'login')
-		WebUI.maximizeWindow()
 	}
 
 	@When("User insert credential such as (.*)")
@@ -97,7 +96,8 @@ class Auth {
 	}
 	@Then("Return modal dialog indicate using Facebook account")
 	def navigateFacebook(){
-		// navigate to modal dialog facebook to procced login
+		WebUI.maximizeWindow()
+		WebUI.navigateToUrl(env.URL + 'hotel')
 	}
 	@When("User insert credential as (.*) and (.*)")
 	def fillFacebook(String email, String password) {
@@ -109,7 +109,7 @@ class Auth {
 		WebUI.click(findTestObject('Object Repository/Login/Page_Masuk Facebook/button_Login'))
 		WebUI.delay(7)
 	}
-	@And("Procced to logout")
+	@And("User call logout endpoint")
 	def navigateOut(){
 		WebUI.navigateToUrl(env.URL + 'logout')
 		WebUI.maximizeWindow()

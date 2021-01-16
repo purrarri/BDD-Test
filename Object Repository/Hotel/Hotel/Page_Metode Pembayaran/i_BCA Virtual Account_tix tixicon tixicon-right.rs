@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_BCA Virtual Account_tix tixicon tixicon-right</name>
+   <tag></tag>
+   <elementGuidId>9ae8b688-8b14-4ab6-aa9d-0f7bdc8e5831</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/div[3]/div/div[2]/div[2]/div/div/div[2]/div[4]/div/a/div/div/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tix tixicon tixicon-right</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;content layout&quot;]/div[@class=&quot;main-wrap&quot;]/div[@class=&quot;landing-page&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-8&quot;]/div[@class=&quot;payment-list&quot;]/div[2]/div[@class=&quot;payment-methods-list&quot;]/div[@class=&quot;card payment-group white&quot;]/a[1]/div[@class=&quot;payment-method-item&quot;]/div[@class=&quot;method-type-name&quot;]/i[@class=&quot;tix tixicon tixicon-right&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/div[3]/div/div[2]/div[2]/div/div/div[2]/div[4]/div/a/div/div/i</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/a/div/div/i</value>
+   </webElementXpaths>
+</WebElementEntity>

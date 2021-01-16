@@ -49,116 +49,23 @@ class Hotel {
 	 */
 	@Given("User navigate to product hotel")
 	def loadHotel() {
-		//		WebUI.openBrowser(env.URL + 'hotel')
-		//		WebUI.maximizeWindow()
+//		WebUI.navigateToUrl(env.URL + 'hotel')
+//		WebUI.maximizeWindow()
 	}
 
-	@When("User select Hotel product")
-	def selectHotel() {
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-
-	@Then("Highlight the modal dialog hotel")
-	def highlightModalHotel() {
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@When("User fill the tujuan field by (.*)")
-	def fillTujuanHotel() {
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-
-	@And("User select top recomendation list")
-	def selectTujuan(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@Then("Return modal calender")
-	def returnCalender(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@When("User select check-in date")
-	def checkInHotel(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@And("User select check-out date")
-	def checkOutHotel(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-
-	@And("User select tamu (.*)")
+	@When("User select tamu (.*)")
 	def countTamu(String tamu){
-		for (int i = 0; i < tamu.toInteger(); i++) {
-			WebUI.click(findTestObject(''))
+		for (int i = 1; i < tamu.toInteger(); i++) {
+			WebUI.click(findTestObject('Object Repository/Hotel/Hotel/custom_xx/tamu'))
 		}
+		
+		
 	}
 	@And("User select kamar (.*)")
 	def countKamar(String kamar){
-		for (int i = 1; 0 < kamar.toInteger(); i++) {
-			WebUI.click(findTestObject(''))
+		for (int j = 1; j < kamar.toInteger(); j++) {
+			WebUI.click(findTestObject('Object Repository/Hotel/Hotel/custom_xx/kamar'))
 		}
 	}
-	@And("User select selesai")
-	def navigateSelesai(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@And("User select CARI HOTEL")
-	def navigateCariHotel(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@Then("Navigate to search result")
-	def navigateSearchResult(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@When("User select top result")
-	def selectHotelRes(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@Then("Navigated to detail result")
-	def detailHotel(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@When("User select PILIH")
-	def userSelectPilih(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@Then("User navigated to form pemesanan")
-	def transactionHotel(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@When("User select Lanjut ke pembayaran")
-	def proccedHotelTransc(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@Then("Navigated to final BCA Virtual Account")
-	def navigatedHotelVA(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
-	@And("Get the nomor virtual account value")
-	def getVAAccount(){
-		WebUI.click(findTestObject(''))
-		WebUI.delay(7)
-	}
+
 }

@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CucumberKW.runFeatureFile('Include/features/tiket-web/LoginFacebook.feature')
 
 WebUI.setText(findTestObject('Object Repository/Hotel/Hotel/Page_Booking Hotel Murah Harga Promo Pesan _0a601b/input_Tujuan_destination'), 
-    'batam')
+    'bali')
 
 WebUI.click(findTestObject('Object Repository/Hotel/Hotel/Page_Booking Hotel Murah Harga Promo Pesan _0a601b/div_BatamKepulauan Riau IndonesiaCITY444 Properti'))
 
@@ -51,12 +51,15 @@ WebUI.click(findTestObject('Object Repository/Hotel/Hotel/Page_Form Pemesanan - 
 
 WebUI.click(findTestObject('Object Repository/Hotel/Hotel/Page_Metode Pembayaran/i_BCA Virtual Account_tix tixicon tixicon-right'))
 
-WebUI.click(findTestObject('Object Repository/Hotel/Hotel/Page_BCA Virtual Account/button_Lanjutkan'))
+WebUI.click(findTestObject('Object Repository/Hotel/Hotel/custom_xx/Page_BCA Virtual Account/button_Lanjutkan'))
 
-WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Hotel/Hotel/Page_BCA Virtual Account/p_3947 1001 1077 8008'), 
-    '', '', 0)
+va = WebUI.getText(findTestObject('Object Repository/Hotel/Hotel/custom_xx/Page_BCA Virtual Account/div_Nomor Virtual Account 3947 1001 1077 8008SALIN'))
+System.out.println(va+"***")
 
-WebUI.click(findTestObject('Object Repository/Hotel/Hotel/Page_BCA Virtual Account/span_SALIN'))
+WebUI.click(findTestObject('Object Repository/Hotel/Hotel/custom_xx/Page_BCA Virtual Account/span_SALIN'))
+
+price = WebUI.getText(findTestObject('Object Repository/Hotel/Hotel/custom_xx/Page_BCA Virtual Account/div_IDR 5606192'))
+System.out.println(price+"***")
 
 CucumberKW.runFeatureFile('Include/features/tiket-web/Logout.feature')
 

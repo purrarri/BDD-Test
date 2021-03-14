@@ -1,5 +1,5 @@
-# Test BDD case e-commerce
-#Author: andreassanggam@yahoo.com
+# Dummy Test BDD case e-commerce
+
 
 
 #### TODO

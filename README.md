@@ -1,6 +1,6 @@
-# tiket_asessement
+# Test BDD case e-commerce
 #Author: andreassanggam@yahoo.com
-tiket.com assesment 
+
 
 #### TODO
 - [x] Product Hotel
